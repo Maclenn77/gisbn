@@ -5,10 +5,10 @@ describe "gisbn" do
   subject { Gisbn::Book.new "0262033844", "AIzaSyDKepjfaVBRcgsnPALw5s2UNyfOk-1FHUU", "ca" }
 
   describe '#process' do
-    let(:output) { "Introduction to Algorithms" }
+    let(:output) { "Introduction to Algorithms, Third Edition" }
 
     it 'book title' do
-      expect(output.downcase).to eq subject.title.downcase
+      expect(subject.title.downcase).to eq(output)
     end
 
     it 'book page count' do

@@ -22,6 +22,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   ##dependency for testing automation
+  spec.add_development_dependency "factory_bot"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-nc"
+  spec.add_development_dependency "vcr"
 end
